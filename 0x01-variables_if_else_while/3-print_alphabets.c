@@ -7,7 +7,6 @@
 int main(void)
 {
     int alphabet, ALPHABET;
-
     alphabet = 'a';
     ALPHABET = 'A';
     while (alphabet <= 'z')
@@ -22,4 +21,4 @@ int main(void)
     }
         putchar('\n');
     return (0);
-
+}
