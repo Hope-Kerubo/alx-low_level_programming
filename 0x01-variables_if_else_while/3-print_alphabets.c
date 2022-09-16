@@ -1,24 +1,22 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
- * main is used to run the main program
- *
- * Return will return zero if no error and non zero if an error is found
-*/
+ * main - Entry point
+ * Description: prints alphabet in lowercase then uppercase
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-    int alphabet, ALPHABET;
-    alphabet = 'a';
-    ALPHABET = 'A';
-    while (alphabet <= 'z')
-    {
-        putchar(alphabet);
-        alphabet++;
-    }
-    while (ALPHABET <= 'Z')
-    {
-        putchar(ALPHABET);
-        ALPHABET++;
-    }
-        putchar('\n');
-    return (0);
+	int ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		putchar(ch);
+	}
+	for (ch = 'A'; ch <= 'Z'; ch++)
+	{
+		putchar(ch);
+	}
+	putchar('\n');
+	return (0);
 }

@@ -1,27 +1,24 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
- * main is used to run the main program
- *
- * Return will return zero if no error and non zero if an error is found
-*/
+ * main - Entry point
+ * Description: prints lowercase alphabets
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-    int alphabt;
-    alphabt = 'a';
-    while (alphabt <= 'z')
-    {
-        if (alphabt == 'e')
-        {
-        }
-        else
-            if (alphabt == 'q')
-            {
-            }
-            else
-                putchar(alphabt);
-        alphabt++;
-    }
-    putchar('\n');
-    return (0);
-}
+	int ch;
 
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		if (ch != 'e' && ch != 'q')
+		{
+			putchar(ch);
+		}
+		else
+		{
+		}
+	}
+	putchar('\n');
+	return (0);
+}

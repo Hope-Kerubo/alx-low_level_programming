@@ -1,18 +1,18 @@
 #include <stdio.h>
-
+#include <unistd.h>
 /**
- * main is used to run the main program
- * Return will return zero if no error and non zero if an error is found
-
-*/
-
+ * main - Entry point
+ * Description: prints char below 10
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-    int i;
-    for (i = 48; i < 58; i++)
-    {
-        putchar(i);
-    }
-    putchar('\n');
-    return (0);
+	int a;
+
+	for (a = 0; a < 10; a++)
+	{
+		putchar(a + '0');
+	}
+	putchar('\n');
+	return (0);
 }
